@@ -48,6 +48,6 @@ tab_bar_style slant
 
 
 # BEGIN_KITTY_THEME
-# Hybrid
+# Aquarium Dark
 include current-theme.conf
 # END_KITTY_THEME
