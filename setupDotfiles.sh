@@ -12,7 +12,7 @@ if [[ -x "$(command -v stow)" ]]; then
     exit
 fi
 
-for PACK in fish hypr kitty omf pulse neofetch
+for PACK in fish hypr kitty omf pulse neofetch wofi mako
 do
   echo "stowing $PACK ..."
   stow --adopt --target=$CONFIG_LOCATION/$PACK --dir=.config/ $PACK 
