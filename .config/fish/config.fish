@@ -1,5 +1,9 @@
 
 set -U fish_greeting
+set -g theme_date_format "+%H:%M"
+set -g theme_title_display_user yes
+set -g theme_title_display_process yes
+set -g theme_nerd_fonts yes
 if status is-interactive
     # Commands to run in interactive sessions can go here
     neofetch
