@@ -12,9 +12,14 @@ if [[ -x "$(command -v stow)" ]]; then
     exit
 fi
 
-for PACK in fish hypr kitty omf pulse neofetch wofi mako
+echo "checking if the required directories exist"
+for PACK in fish hypr kitty omf pulse neofetch wofi mako swaylock wlogout
+do
+  ([ -d "$CONFIG_LOCATION$PACK" ] && echo "Directory $CONFIG_LOCATION$PACK exists!") || (echo "Couldn't find directory $CONFIG_LOCATION/$PACK ! Attempting to create..." && mkdir $CONFIG_LOCATION/$PACK)
+done
+for PACK in fish hypr kitty omf pulse neofetch wofi mako swaylock wlogout
 do
   echo "stowing $PACK ..."
-  stow --adopt --target=$CONFIG_LOCATION/$PACK --dir=.config/ $PACK 
+  stow --adopt --target=$CONFIG_LOCATION$PACK --dir=.config/ $PACK 
 done
 
