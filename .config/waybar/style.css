@@ -79,6 +79,7 @@ button:hover {
 #temperature,
 #backlight,
 #network,
+#network#dl,
 #pulseaudio,
 #wireplumber,
 #custom-media,
@@ -158,6 +159,7 @@ label:focus {
     background-color: #90b1b1;
 }
 
+#network#dl,
 #network {
     background-color: #2980b9;
 }
@@ -210,15 +212,15 @@ label:focus {
 #tray {
     background-color: #2980b9;
 }
-
-#tray > .passive {
-    -gtk-icon-effect: dim;
-}
-
-#tray > .needs-attention {
-    -gtk-icon-effect: highlight;
-    background-color: #eb4d4b;
-}
+/**/
+/* #tray > .passive { */
+/*     -gtk-icon-effect: dim; */
+/* } */
+/**/
+/* #tray > .needs-attention { */
+/*     -gtk-icon-effect: highlight; */
+/*     background-color: #eb4d4b; */
+/* } */
 
 #idle_inhibitor {
     background-color: #2d3436;
