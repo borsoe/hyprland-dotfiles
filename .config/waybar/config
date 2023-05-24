@@ -5,7 +5,7 @@
      "spacing": 8, 
      "modules-left": ["wlr/workspaces", "hyprland/submap"],
      "modules-center": ["hyprland/window"],
-     "modules-right": [ "hyprland/language", "pulseaudio","network", "network#dl", "cpu", "memory", "temperature", "clock", "tray"],
+     "modules-right": [ "custom/wallpaper", "hyprland/language", "pulseaudio","network", "network#dl", "cpu", "memory", "temperature", "clock", "tray"],
 
     // =====================
     // Modules configuration
@@ -36,37 +36,16 @@
     "hyprland/window":{
       "format": "󰞷 {} 󱞦"
     },
+    "custom/wallpaper":{
+      "format":  "󰸉 ",
+      "on-click": "~/.config/waybar/scripts/changeWallpaper.sh -i &",
+      "on-click-right": "~/.config/waybar/scripts/changeWallpaper.sh -d &"
+    },
     "hyprland/language": {
     "format": "  {}",
     "format-en": "US",
     "format-fa": "FA"
     },
-    "mpd": {
-        "format": "{stateIcon} {consumeIcon}{randomIcon}{repeatIcon}{singleIcon}{artist} - {album} - {title} ({elapsedTime:%M:%S}/{totalTime:%M:%S}) ⸨{songPosition}|{queueLength}⸩ {volume}% ",
-        "format-disconnected": "Disconnected ",
-        "format-stopped": "{consumeIcon}{randomIcon}{repeatIcon}{singleIcon}Stopped ",
-        "unknown-tag": "N/A",
-        "interval": 2,
-        "consume-icons": {
-            "on": " "
-        },
-        "random-icons": {
-            "off": "<span color=\"#f53c3c\"></span> ",
-            "on": " "
-        },
-        "repeat-icons": {
-            "on": " "
-        },
-        "single-icons": {
-            "on": "1 "
-        },
-        "state-icons": {
-            "paused": "",
-            "playing": ""
-        },
-        "tooltip-format": "MPD (connected)",
-        "tooltip-format-disconnected": "MPD (disconnected)"
-    }, 
     "tray": {
         "icon-size": 21,
         "spacing": 10
