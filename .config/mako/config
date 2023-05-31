@@ -24,13 +24,13 @@ markup=1
 actions=1
 history=1
 text-alignment=center
-default-timeout=5000
+default-timeout=1000
 ignore-timeout=0
 max-visible=5
 layer=overlay
-anchor=center
+anchor=bottom-right
 
-background-color=#1e1e2e
+background-color=#1a1b26
 text-color=#d9e0ee
 border-color=#313244
 progress-color=over #89b4fa
