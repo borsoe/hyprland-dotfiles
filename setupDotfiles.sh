@@ -14,6 +14,16 @@ if [[ -x "$(command -v stow)" ]]; then
     exit
 fi
 
+read -rep $' IMPORTANT NOTE: this script DOES NOT back up your currecnt configurations and IT WILL rewrite them, continue? (y,n) ' CON
+
+if [[ $CON == "Y" || $CON == "y" ]]; then
+  echo "contining with the installations!"
+  sleep 2
+else
+  echo "exiting installation..."
+  exit 
+fi
+
 echo "checking if the required directories exist"
 for PACK in ${PACKS[@]}
 do
