@@ -1,11 +1,11 @@
 {
      "layer": "top",
      "position": "top", 
-     "height": 30, 
+     "height": 40, 
      "spacing": 8, 
-     "modules-left": ["wlr/workspaces", "hyprland/submap"],
+     "modules-left": ["wlr/workspaces", "hyprland/submap","network","custom/cava", "network#dl"],
      "modules-center": ["hyprland/window"],
-     "modules-right": [ "custom/wallpaper", "hyprland/language", "pulseaudio","network", "network#dl", "cpu", "memory", "temperature", "clock", "tray"],
+     "modules-right": [ "custom/wallpaper", "hyprland/language", "pulseaudio", "cpu", "memory", "temperature", "clock", "tray"],
 
     // =====================
     // Modules configuration
@@ -13,11 +13,16 @@
     "wlr/workspaces":{
          "format": "{icon}",
          "format-icons": {
-             "1": "",
-             "2": "󰈹",
-             "3": "󰓓",
-             "4": "",
-             "5": "",
+             "1": "一",
+             "2": "ニ",
+             "3": "三",
+             "4": "四",
+             "5": "五",
+             "6": "六",
+             "7": "七",
+             "8": "八",
+             "9": "九",
+             "10": "十",
              "urgent": "",
              "active": "",
              "default": ""
@@ -37,7 +42,7 @@
       "format": "󰞷 {} 󱞦"
     },
     "custom/wallpaper":{
-      "format":  "󰸉 ",
+      "format":  "󰉼",
       "on-click": "~/.config/waybar/scripts/changeWallpaper.sh -i &",
       "on-click-right": "~/.config/waybar/scripts/changeWallpaper.sh -d &"
     },
@@ -116,6 +121,11 @@
             "default": ["", "", ""]
         },
         "on-click": "pavucontrol"
-    } 
+    },
+    "custom/cava":{
+      "exec": "~/.config/waybar/scripts/custom_hyprland_cava.sh",
+      "tooltip": false
+    }
+    
 }
 

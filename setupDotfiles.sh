@@ -4,7 +4,7 @@ echo "checking to see if stow is installed"
 
 CONFIG_LOCATION=$HOME/.config/
 
-PACKS=("fish" "hypr" "kitty" "omf" "pulse" "neofetch" "wofi" "mako" "swaylock" "wlogout" "gtk-3.0" "xsettingsd" "waybar")
+PACKS=("fish" "hypr" "kitty" "omf" "pulse" "neofetch" "wofi" "mako" "swaylock" "wlogout" "gtk-3.0" "xsettingsd" "waybar" "cava")
 
 if [[ -x "$(command -v stow)" ]]; then
   echo "found stow, proceding to link dotfiles "
