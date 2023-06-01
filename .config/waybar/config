@@ -102,7 +102,7 @@
     },
     "network#dl":{
       "interval": 1,
-      "format": "   {bandwidthDownBytes}"
+      "format": " {bandwidthDownBytes}"
     },
     "pulseaudio": {
         "format": "{volume}% {icon} {format_source}",
