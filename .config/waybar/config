@@ -3,7 +3,7 @@
      "position": "top", 
      "height": 40, 
      "spacing": 8, 
-     "modules-left": ["wlr/workspaces", "hyprland/submap","network","custom/cava", "network#dl"],
+     "modules-left": ["wlr/workspaces", "hyprland/submap","network","custom/cava", "custom/spotify","network#dl"],
      "modules-center": ["hyprland/window"],
      "modules-right": [ "custom/wallpaper", "hyprland/language", "pulseaudio", "cpu", "memory", "temperature", "clock", "tray"],
 
@@ -125,7 +125,15 @@
     "custom/cava":{
       "exec": "~/.config/waybar/scripts/custom_hyprland_cava.sh",
       "tooltip": false 
-    }
-    
+    },
+    "custom/spotify": {
+      "format": " {}",
+      "return-type": "json",
+      "on-click": "playerctl -p spotify play-pause",
+      "on-click-right": "killall spotify",
+      "smooth-scrolling-threshold": 10, // This value was tested using a trackpad, it should be lowered if using a mouse.
+      "on-scroll-up" : "playerctl -p spotify next",
+      "on-scroll-down" : "playerctl -p spotify previous",
+      "exec": "~/.config/waybar/scripts/custom_mediaplayer.py 2> /dev/null", // Script in resources/custom_modules folder
+  }    
 }
-

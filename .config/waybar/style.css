@@ -29,9 +29,9 @@
 #mode, #clock, #memory, #temperature, #cpu, #custom-weather,
 #mpd, #idle_inhibitor, #backlight, #pulseaudio, #network, 
 #battery, #custom-powermenu, #custom-cava-internal,
-#custom-launcher, #tray, #disk, #custom-pacman, #custom-scratchpad-indicator, #window, #language, #custom-wallpaper {
-  padding-left: .6rem;
-  padding-right: .6rem;
+#custom-launcher, #tray, #disk, #custom-pacman, #custom-scratchpad-indicator, #window, #language, #custom-wallpaper, #custom-spotify{
+  padding-left: .5rem;
+  padding-right: .5rem;
 }
 
 /* Bar */
@@ -92,7 +92,7 @@ tooltip label {
 #temperature {
   color: @sapphire;
 }
-#backlight {
+#custom-spotify{
   color: @green;
 }
 #pulseaudio {
