@@ -10,11 +10,16 @@ from gi.repository import Playerctl, GLib
 
 logger = logging.getLogger(__name__)
 
+def get_icon(player):
+    if player.props.player_name == 'spotify':
+        return ''
+    else:
+        return '󰗃'
 
 def write_output(text, player):
     logger.info('Writing output')
 
-    output = {'text': text,
+    output = {'text': get_icon(player) + ' ' + text,
               'class': 'custom-' + player.props.player_name,
               'alt': player.props.player_name,
               'tooltip': text}

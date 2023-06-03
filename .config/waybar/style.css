@@ -92,8 +92,11 @@ tooltip label {
 #temperature {
   color: @sapphire;
 }
-#custom-spotify{
+#custom-spotify.custom-spotify{
   color: @green;
+}
+#custom-spotify.custom-firefox{
+  color: @red;
 }
 #pulseaudio {
   color: @mauve;  /* not active */

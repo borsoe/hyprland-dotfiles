@@ -127,7 +127,7 @@
       "tooltip": false 
     },
     "custom/spotify": {
-      "format": " {}",
+      "format": "{}",
       "return-type": "json",
       "max-length": 40,
       "on-click": "playerctl -p spotify play-pause",
