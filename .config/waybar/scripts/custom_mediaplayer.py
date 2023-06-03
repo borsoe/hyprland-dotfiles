@@ -16,7 +16,8 @@ def write_output(text, player):
 
     output = {'text': text,
               'class': 'custom-' + player.props.player_name,
-              'alt': player.props.player_name}
+              'alt': player.props.player_name,
+              'tooltip': text}
 
     sys.stdout.write(json.dumps(output) + '\n')
     sys.stdout.flush()
