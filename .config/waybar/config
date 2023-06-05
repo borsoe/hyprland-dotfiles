@@ -47,7 +47,7 @@
       "on-click-right": "~/.config/waybar/scripts/changeWallpaper.sh -d &"
     },
     "hyprland/language": {
-    "format": "  {}",
+    "format": "{}",
     "format-en": "US",
     "format-fa": "FA"
     },

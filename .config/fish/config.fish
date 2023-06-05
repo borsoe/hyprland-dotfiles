@@ -22,3 +22,4 @@ end
 alias ll="ls -l"
 alias lla="ls -a -l"
 alias get="paru"
+alias rate="rate-mirrors --allow-root arch | sudo tee /etc/pacman.d/mirrorlist"
