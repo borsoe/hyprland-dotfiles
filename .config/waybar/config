@@ -33,13 +33,12 @@
            "3":[],
            "4":[],
            "5":[],
-           "6":[],
-           "7":[]
+           "6":[]
          },
          "on-click": "activate"
      },
     "hyprland/window":{
-      "format": "󰞷 {} 󱞦"
+      "format": "{}"
     },
     "custom/wallpaper":{
       "format":  "󰉼",
@@ -124,14 +123,16 @@
     },
     "custom/cava":{
       "exec": "~/.config/waybar/scripts/custom_hyprland_cava.sh",
-      "tooltip": false 
+      "tooltip": false,
+      "exec-on-event": true,
+      "on-click": "echo restart module"
     },
     "custom/spotify": {
       "format": "{}",
       "return-type": "json",
       "max-length": 40,
       "on-click": "playerctl play-pause",
-      "smooth-scrolling-threshold": 5, // This value was tested using a trackpad, it should be lowered if using a mouse.
+      "smooth-scrolling-threshold": 5, 
       "on-scroll-up" : "playerctl next",
       "on-scroll-down" : "playerctl previous",
       "exec": "~/.config/waybar/scripts/custom_mediaplayer.py 2> /dev/null" // Script in resources/custom_modules folder
