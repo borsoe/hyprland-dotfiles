@@ -24,7 +24,7 @@
              "9": "九",
              "10": "十",
              "urgent": "",
-             "active": "",
+             // "active": "",
              "default": ""
          },
          "persistent_workspaces":{

@@ -28,7 +28,7 @@
 
 #mode, #clock, #memory, #temperature, #cpu, #custom-weather,
 #mpd, #idle_inhibitor, #backlight, #pulseaudio, #network, 
-#battery, #custom-powermenu, #custom-cava-internal,
+#battery, #custom-powermenu, #custom-cava,
 #custom-launcher, #tray, #disk, #custom-pacman, #custom-scratchpad-indicator, #window, #language, #custom-wallpaper, #custom-spotify{
   padding-left: .5rem;
   padding-right: .5rem;
@@ -47,29 +47,22 @@ window > box {
 
 
 /* Workspaces */
-#workspaces:hover {
-  background-color: @rosewater;
-  border: none;
-}
 
+#workspaces button.active label{
+  color: @sapphire;
+}
 #workspaces button {
   padding-right: .4rem;
   padding-left: .4rem;
   padding-top: .1rem;
   padding-bottom: .1rem;
-  color: @text;
   border: .2px solid transparent;
   background: transparent;
 }
-
-#workspaces button.focused {
-  color: @red;
+#workspaces button label{
+  color: @peach;
 }
 
-#workspaces button:hover {
-  border: .2px solid transparent;
-  color: @rosewater;
-}
 
 /* Tooltip */
 tooltip {
@@ -122,5 +115,8 @@ tooltip label {
 }
 #language{
   color: @sky
+}
+#custom-cava{
+  color: @teal;
 }
  
