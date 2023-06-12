@@ -15,7 +15,8 @@ declare -A websites=(
   ["Zoroto"]="https://zoro.to/"
   ["Hyprland Wiki"]="https://wiki.hyprland.org/",
   ["Twitch"]="https://www.twitch.tv/directory",
-  ["Steam marketplace - key"]="https://steamcommunity.com/market/listings/440/Mann%20Co.%20Supply%20Crate%20Key"
+  ["Steam marketplace - key"]="https://steamcommunity.com/market/listings/440/Mann%20Co.%20Supply%20Crate%20Key",
+  ["Animelon"]="animelon.com/"
 )
 
 # Define the directory to store website icons
